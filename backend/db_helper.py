@@ -56,20 +56,7 @@ def fetch_expense_summary(start_date, end_date):
         )
         data = cursor.fetchall()
         return data
-    
-# def fetch_monthly_expense_summary():
-#     logger.info(f"fetch total expense amount for month")
-#     with get_db_cursor() as cursor:
-#         cursor.execute(
-#             """SELECT month(expense_date) as expense_month, 
-#                monthname(expense_date) as month_name,
-#                sum(amount) as total FROM expenses
-#                GROUP BY expense_month, month_name;
-#             """
-#         )
-#         data = cursor.fetchall()
-#         return data
-    
+
 
 def fetch_monthly_expense_summary():
     logger.info(f"Fetch total expense amount for month and year")
