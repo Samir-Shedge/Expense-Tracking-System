@@ -4,7 +4,7 @@ import requests
 import pandas as pd
 import altair as alt
 
-APP_URL = "http://localhost:8000"
+APP_URL = "https://expense-tracking-system-gew0.onrender.com/"
 
 def analytics_months_tab():
     response = requests.get(f"{APP_URL}/monthly_summary/")

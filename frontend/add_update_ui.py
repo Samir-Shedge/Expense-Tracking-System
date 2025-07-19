@@ -2,7 +2,7 @@ import streamlit as st
 from datetime import datetime
 import requests
 
-APP_URL = "http://localhost:8000"
+APP_URL = "https://expense-tracking-system-gew0.onrender.com/"
 
 def add_update_tab():
     st.markdown("## 💸 Add or Update Your Daily Expenses")
