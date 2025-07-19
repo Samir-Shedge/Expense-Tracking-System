@@ -4,7 +4,7 @@ import requests
 import pandas as pd
 import plotly.express as px
 
-APP_URL = "https://expense-tracking-system-gew0.onrender.com/"
+APP_URL = "http://localhost:8000"
 
 def analytics_by_category_tab():
     st.markdown("## 📊 Expense Analytics by Category")
