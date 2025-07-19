@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: expense-tracking-system
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: ./start.sh
+    branch: main
+    runtime: python
+    repo: https://github.com/Samir-Shedge/Expense-Tracking-System
+    region: oregon
