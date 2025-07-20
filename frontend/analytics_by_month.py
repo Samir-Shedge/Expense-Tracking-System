@@ -6,7 +6,7 @@ import altair as alt
 
 APP_URL = "http://localhost:8000"
 
-def analytics_months_tab():
+def analytics_month_tab():
     response = requests.get(f"{APP_URL}/monthly_summary/")
     monthly_summary = response.json()
 
